@@ -1,0 +1,31 @@
+# VeriYapilariVeAlgoritmalar
+
+[7, 5, 1, 8, 3, 6, 0, 9, 4, 2] dizisinin Binary-Search-Tree aşamalarını yazınız.
+
+root:7
+                     
+                                 7               
+                              /     \
+                             /       \
+                           5           8
+                          /  \           \
+                         /    \           \
+                        1      6            9
+                      /    \
+                     /      \
+                    0        3
+                           /   \
+                          /     \
+                        2         4
+                       
+1- Kökümüz olan 7'yi ağacımızn başına yazarız.
+2- 7>5 olduğu için 5 değerini 7 den sola doğru çıkan bir dala yerleştririz.
+2- 7>1 ve 5>1 olduğu için 5 den çıkardığımız sola doğru olan dala 1 i yerleştiririz.
+3- 8>7 olduğu için 7' nin sağından dal çıkartılır ve 8 yerleştirilir.
+4- 3<7, 3<5 ve 3>1 olduğu için 1'in sağından dal çıkartılır ve 3 yerleştirilir.
+5- 6<7 ve 6>5 olduğu için 5' den sağa doğru dal çıkartılır ve 6 yerleştirilir.
+6- 0<7, 0<5,0<1 olduğu için 1' in solundan çıkarılan dala 0 yerleştirilir.
+7- 9>7 ve 9>8 olduğu için 8'in sağından çıkartılan dala 9 yerleştirilir.
+8- 4<7, 4<5, 4>1 ve 3>4 olduğu için 3' ün sağından çıkartılan dala yerleştirilir.
+9- 2<7, 2<5, 2>1 ve 2<3 olduğu için 3'ün solundan çıkartılan dala 2 yerleştirilir.
+                       
